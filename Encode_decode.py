@@ -17,6 +17,7 @@ def decode(strs):
         while e < len(strs) and strs[e] != '/':
             e += 1
         size = int(strs[i:e])
+        print(f'strs[i:e]: {strs[i:e]}')
         word = strs[e+1: e + 1 + size]
         i = e + 1 + size
         res.append(word)
